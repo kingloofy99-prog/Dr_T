@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Mobiles | TechNexus Premium Electronics</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .glass-effect {
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+        }
+        .hero-gradient {
+            background: linear-gradient(135deg, #006d34 0%, #191c1d 100%);
+        }
+        .card-shadow {
+            box-shadow: 0px 12px 32px rgba(0, 109, 52, 0.06);
+        }
+        .card-shadow:hover {
+            box-shadow: 0px 20px 48px rgba(0, 109, 52, 0.12);
+            transform: translateY(-4px);
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+    </style>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-tint": "#006d34",
+                        "inverse-on-surface": "#f0f1f2",
+                        "on-primary-fixed-variant": "#005225",
+                        "surface-container": "#edeeef",
+                        "surface-variant": "#e1e3e4",
+                        "tertiary-fixed": "#e5e2e1",
+                        "tertiary-container": "#b3b1b1",
+                        "on-primary-container": "#004f24",
+                        "on-primary": "#ffffff",
+                        "on-tertiary-fixed-variant": "#474746",
+                        "primary-container": "#00cc66",
+                        "secondary-fixed-dim": "#c6c6c6",
+                        "surface-container-high": "#e7e8e9",
+                        "tertiary": "#5f5e5e",
+                        "surface": "#f8f9fa",
+                        "outline-variant": "#bbcbba",
+                        "on-surface": "#191c1d",
+                        "surface-bright": "#f8f9fa",
+                        "tertiary-fixed-dim": "#c8c6c5",
+                        "surface-container-low": "#f3f4f5",
+                        "on-secondary": "#ffffff",
+                        "surface-container-highest": "#e1e3e4",
+                        "on-secondary-container": "#646464",
+                        "on-secondary-fixed-variant": "#474747",
+                        "secondary-container": "#e2e2e2",
+                        "on-tertiary": "#ffffff",
+                        "on-error-container": "#93000a",
+                        "secondary-fixed": "#e2e2e2",
+                        "on-tertiary-container": "#444444",
+                        "inverse-primary": "#37e279",
+                        "on-surface-variant": "#3c4a3d",
+                        "primary": "#006d34",
+                        "surface-dim": "#d9dadb",
+                        "background": "#f8f9fa",
+                        "on-error": "#ffffff",
+                        "inverse-surface": "#2e3132",
+                        "error-container": "#ffdad6",
+                        "on-tertiary-fixed": "#1c1b1b",
+                        "secondary": "#5e5e5e",
+                        "primary-fixed": "#63ff94",
+                        "on-primary-fixed": "#00210b",
+                        "surface-container-lowest": "#ffffff",
+                        "on-secondary-fixed": "#1b1b1b",
+                        "outline": "#6c7b6c",
+                        "error": "#ba1a1a",
+                        "primary-fixed-dim": "#37e279",
+                        "on-background": "#191c1d"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "unit": "8px",
+                        "container-max": "1280px",
+                        "section-gap-lg": "120px",
+                        "margin-mobile": "20px",
+                        "margin-desktop": "64px",
+                        "gutter": "24px",
+                        "section-gap-sm": "64px"
+                    },
+                    "fontFamily": {
+                        "display-lg": ["Montserrat"],
+                        "body-md": ["Inter"],
+                        "body-lg": ["Inter"],
+                        "display-lg-mobile": ["Montserrat"],
+                        "headline-md": ["Montserrat"],
+                        "headline-sm": ["Montserrat"],
+                        "label-md": ["Inter"],
+                        "label-sm": ["Inter"]
+                    },
+                    "fontSize": {
+                        "display-lg": ["64px", { "lineHeight": "72px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+                        "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+                        "display-lg-mobile": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.01em", "fontWeight": "700" }],
+                        "headline-md": ["32px", { "lineHeight": "40px", "fontWeight": "600" }],
+                        "headline-sm": ["24px", { "lineHeight": "32px", "fontWeight": "600" }],
+                        "label-md": ["14px", { "lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "600" }],
+                        "label-sm": ["12px", { "lineHeight": "16px", "fontWeight": "500" }]
+                    }
+                },
+            },
+        }
+    </script>
+</head>
+<body class="bg-surface text-on-surface font-body-md overflow-x-hidden">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-surface/80 dark:bg-surface-container/80 backdrop-blur-xl shadow-sm">
+<div class="max-w-[1280px] mx-auto px-margin-desktop flex justify-between items-center h-[64px]">
+<div class="flex items-center gap-8">
+<span class="font-headline-sm text-headline-sm font-bold text-on-surface">TechNexus</span>
+<div class="hidden md:flex gap-6 items-center">
+<a class="text-on-surface-variant hover:text-primary transition-colors font-body-md text-body-md" href="#">Laptops</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-body-md text-body-md" href="#">Printers</a>
+<a class="text-primary font-bold border-b-2 border-primary font-body-md text-body-md" href="#">Mobiles</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-body-md text-body-md" href="#">Deals</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-body-md text-body-md" href="#">Support</a>
+</div>
+</div>
+<div class="flex items-center gap-4">
+<button class="text-on-surface-variant hover:text-primary transition-colors font-body-md text-body-md">Log In</button>
+<button class="bg-primary-container text-on-primary-container px-6 py-2 rounded-full font-label-md text-label-md hover:opacity-80 transition-all duration-300 active:scale-95">Sign Up</button>
+</div>
+</div>
+</nav>
+<main class="pt-[64px]">
+<!-- Hero Section -->
+<section class="hero-gradient relative min-h-[600px] flex items-center overflow-hidden">
+<div class="max-w-[1280px] mx-auto px-margin-desktop grid grid-cols-1 md:grid-cols-2 gap-gutter items-center relative z-10 py-16">
+<div class="text-white space-y-6">
+<span class="inline-block px-4 py-1 bg-primary-container/20 border border-primary-container/30 rounded-full text-primary-fixed font-label-sm text-label-sm uppercase tracking-widest">Evolution of Power</span>
+<h1 class="font-display-lg text-display-lg text-white leading-tight">Nexus X1 Pro. <br/><span class="text-primary-container">Limitless.</span></h1>
+<p class="font-body-lg text-body-lg text-surface-variant/90 max-w-md">Experience the pinnacle of mobile engineering. Featuring the A17 Bionic equivalent architecture and a revolutionary liquid-glass display.</p>
+<div class="flex gap-4 pt-4">
+<button class="bg-primary-container text-on-primary-container px-8 py-4 rounded-lg font-label-md text-label-md hover:brightness-110 transition-all shadow-lg">Order Now</button>
+<button class="border border-white/30 text-white px-8 py-4 rounded-lg font-label-md text-label-md hover:bg-white/10 transition-all">Explore Features</button>
+</div>
+</div>
+<div class="relative flex justify-center">
+<img class="w-full max-w-[500px] object-contain drop-shadow-2xl transform hover:scale-105 transition-transform duration-700" data-alt="A hyper-realistic studio shot of a premium black smartphone with a curved glass edge, reflecting vibrant green ambient light. The phone is positioned diagonally against a dark, moody background with subtle atmospheric smoke. The lighting is precise, highlighting the metallic texture and the sleek camera array. The overall aesthetic is high-end corporate modern with a focus on precision engineering and professional technology." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBQE9W1JIbElWJfuDDC8_1ZN6CK647y0AfebyVh_LwNC2MyUys8izY_pfNIzyaolQfKn36-jLq28-2i7sU2TrGtknIbkKLXQZ65VPFI54hYnDLGdJR8dlDQGlwjNoKHIa0RH0uFIxisN0E11z7AxGqbKtEeMl4d-Ry0aDypUfc-X7lUv5IgWrGtVs1yKQ7ZdF_uVf5lRMYQGwrkr3A9GWjNXDhJZeR9hJ-ConUKSk-36MkXLXuvDFB-xxEfW4AUrwfwcnrc74qcbvJF"/>
+</div>
+</div>
+<!-- Atmospheric background elements -->
+<div class="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-primary/10 to-transparent pointer-events-none"></div>
+</section>
+<!-- Product Grid - Bento Style -->
+<section class="py-section-gap-lg bg-surface">
+<div class="max-w-[1280px] mx-auto px-margin-desktop">
+<div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
+<div>
+<h2 class="font-headline-md text-headline-md text-on-surface">The 2024 Collection</h2>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-lg mt-2">Engineered for performance. Designed for the discerning professional.</p>
+</div>
+<div class="flex gap-2">
+<button class="p-3 rounded-full border border-outline-variant hover:bg-primary-container/10 text-primary transition-all">
+<span class="material-symbols-outlined">filter_list</span>
+</button>
+<button class="p-3 rounded-full border border-outline-variant hover:bg-primary-container/10 text-primary transition-all">
+<span class="material-symbols-outlined">grid_view</span>
+</button>
+</div>
+</div>
+<!-- Bento Grid Layout -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-6">
+<!-- Featured Product Card -->
+<div class="md:col-span-8 bg-surface-container-lowest p-8 rounded-xl card-shadow flex flex-col md:flex-row gap-8 items-center group">
+<div class="md:w-1/2">
+<span class="text-primary font-label-sm text-label-sm font-bold uppercase tracking-wider">New Arrival</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mt-2">Nexus Pro Max</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-4 mb-8">The ultimate tool for creators. 200MP sensor, 5000mAh battery, and a titanium frame that redefines durability.</p>
+<div class="flex items-center gap-6">
+<span class="font-headline-sm text-headline-sm text-primary">$1,299</span>
+<button class="text-primary font-label-md text-label-md flex items-center gap-2 group-hover:gap-4 transition-all">View Details <span class="material-symbols-outlined">arrow_forward</span></button>
+</div>
+</div>
+<div class="md:w-1/2 overflow-hidden rounded-lg">
+<img class="w-full h-full object-cover rounded-lg group-hover:scale-105 transition-transform duration-500" data-alt="A sleek titanium smartphone resting on a minimalist marble surface. Soft daylight streams from a window, creating organic shadows and highlighting the brushed metal finish of the phone. Beside it, a small green succulent plant adds a touch of natural color. The scene is bright, clean, and embodies a premium lifestyle aesthetic with high-fidelity textures and professional composition." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBSycbtvpq3-0lpxcUkmkBj65M_1LNhkfisJkZvZJoterlVZaFdeaHs06ug8rJvvMta6NFaDgUIz1J95JtVpZHD8AXn_wuVOB9_3DxGsA8aOlWHxqKhx3KRYX22LumVGET1siwOdufqc_pdc5yioIgaJpDsnTket41to5wCyfnIeV5Y_SJipskVhjriQPzSrM-44dLmDRoEc-gV17ANvTylBde2--ji6V8J8Xlcs-cLtn1RgId3_xO7LWgtGuq0uOSChUdLn2pfRTEA"/>
+</div>
+</div>
+<!-- Secondary Card 1 -->
+<div class="md:col-span-4 bg-surface-container-lowest p-8 rounded-xl card-shadow group">
+<div class="h-48 mb-6 overflow-hidden rounded-lg">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="A minimalist white smartphone positioned vertically on a soft-textured gray background. The lighting is diffused and even, showcasing the clean lines and symmetric bezel. Subtle green highlights are reflected in the glass screen, suggesting a connection to the TechNexus brand identity. The mood is calm, modern, and high-quality." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCRbB4Wdn-5bmHSZsPxzFKhnIZjq1BaVW3syFwIvglKAtyvuY3hqZ5yZWvfJPC6wHiiHYhi53jJM0fgZbyifHsa8x_Rl65nmJDTMo8U31Itv_cGbJXLdJIsWLKejVCwTW561SsjKYZM8M0JMpspH9kV9ADRKbV7s2hxsV-SdTHmkvKA59CpyEQCqESPZM7ZRTzqLNIgHCVgI0KrSElG8HNYwvUtIbJfAPzQXkgDdMNWtkMTM40gr82gX-3XPBiAgJJknhvY115ExIgP"/>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Nexus Air</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2 mb-6">Lightweight design without compromise.</p>
+<div class="flex justify-between items-center">
+<span class="font-label-md text-label-md font-bold text-on-surface">$799</span>
+<button class="bg-secondary-container text-on-secondary-container px-4 py-2 rounded-lg font-label-sm text-label-sm hover:bg-primary hover:text-white transition-colors">Buy</button>
+</div>
+</div>
+<!-- Secondary Card 2 -->
+<div class="md:col-span-4 bg-surface-container-lowest p-8 rounded-xl card-shadow group">
+<div class="h-48 mb-6 overflow-hidden rounded-lg">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="A close-up shot of a smartphone's triple camera lens system, glowing with a subtle internal green light. The metallic rings around the lenses are sharp and detailed. The background is a soft-focus bokeh of urban lights at dusk, creating a sophisticated and professional atmosphere. The focus is on precision optics and high-tech engineering." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCIJap763a49bKBtlVAY725bH8IC3lsIdpH-w0c9uESxKIyZMHJPeYHiT7MxqR0FtErgZHLciah9Efn1qxzfXbGf-9TfM2-gu7z9wB6Umh3CXd0HCNvxUUO-XPPEUzrkOVOPubLHh5oD4eHPXUI_-iJdPWRqJYMcrpoLr6net6FrYlKGvcEhfFYjYKu2HczHBxqgs_hOgJYJwD5UVIrGA-wAlJQmh6O6fqoII8kEdddT2np73b5UhbaGiiiFTScU2S7ulHKLuzdExsF"/>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Nexus Lens+</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2 mb-6">A camera that sees more than eyes do.</p>
+<div class="flex justify-between items-center">
+<span class="font-label-md text-label-md font-bold text-on-surface">$949</span>
+<button class="bg-secondary-container text-on-secondary-container px-4 py-2 rounded-lg font-label-sm text-label-sm hover:bg-primary hover:text-white transition-colors">Buy</button>
+</div>
+</div>
+<!-- Secondary Card 3 -->
+<div class="md:col-span-4 bg-surface-container-lowest p-8 rounded-xl card-shadow group">
+<div class="h-48 mb-6 overflow-hidden rounded-lg">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="A smartphone displayed in a futuristic glass docking station. The base of the dock features a glowing green LED strip. The entire setup is on a dark polished surface, reflecting the minimal lighting. The composition is centered and symmetrical, projecting a sense of advanced technology and high-end design. The aesthetic is clean and futuristic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDnOWLJkq_aRQPIZR9CARKVdTfiBG-EGe6eu8y9N4AMl8eSiq3byIDsWQvC7lS8xnaCJf95szNOCvLL5Aocv4dq_qOyQk4U_l0RdmQ-pBZiHI8rQCIyRADd0799ALc2i2s47u6lxz3rAfIDdt-Rj2zak4LUCUtrbALEiO3Uf--xWwY30DTVaZLEpANDeN40VTNaHsZgBmdD4zex3_B2bYE-IOFwnGVZylKhfPA8b3PM33ZWYrzwVAeDTiXi0pMVlCs_W2XeVQeB7Uxd"/>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Nexus Mini</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2 mb-6">Pocket-sized power for every journey.</p>
+<div class="flex justify-between items-center">
+<span class="font-label-md text-label-md font-bold text-on-surface">$599</span>
+<button class="bg-secondary-container text-on-secondary-container px-4 py-2 rounded-lg font-label-sm text-label-sm hover:bg-primary hover:text-white transition-colors">Buy</button>
+</div>
+</div>
+<!-- Secondary Card 4 -->
+<div class="md:col-span-4 bg-surface-container-lowest p-8 rounded-xl card-shadow group">
+<div class="h-48 mb-6 overflow-hidden rounded-lg">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="Two sleek smartphones overlapping, one in matte black and one in emerald green. They are floating in a void-like space with soft directional lighting that emphasizes their slim profiles. The colors are rich and saturated, following the brand's primary color palette. The mood is energetic and highlights the variety of premium finishes available." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBbIDJfWMA3DSwSmMp7mYxHtqLazW3dRJJ7jqWondacZRgICtrHdsgTiqz-iK7XoFRml9_AKVMxFbX3i800DbACB05E-vL1LMuOBHrIaAOBlB_alb-MQNHWfDbQtqEc_plzqHPcawhMMZmoSygRDl0nVh16cJy95mwlIli-0Y5xM7tJH8eABE3atb8YWV6yWtW0LFUEUt-M2pHopmlTAjx0yZSu9evPl2mLJX9Qb1YSkmrmpbVojNPo__-rqWtYqnrRLrvFrnb3l-Yk"/>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Nexus Duo</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2 mb-6">Seamless multitasking for productivity.</p>
+<div class="flex justify-between items-center">
+<span class="font-label-md text-label-md font-bold text-on-surface">$1,099</span>
+<button class="bg-secondary-container text-on-secondary-container px-4 py-2 rounded-lg font-label-sm text-label-sm hover:bg-primary hover:text-white transition-colors">Buy</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Dynamic Gradient Specs Section -->
+<section class="py-section-gap-lg bg-inverse-surface text-white relative overflow-hidden">
+<div class="absolute top-0 left-0 w-full h-full opacity-10">
+<div class="absolute inset-0" style="background-image: radial-gradient(circle at 2px 2px, #00cc66 1px, transparent 0); background-size: 40px 40px;"></div>
+</div>
+<div class="max-w-[1280px] mx-auto px-margin-desktop relative z-10">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+<div class="space-y-12">
+<h2 class="font-display-lg text-display-lg-mobile md:text-headline-md leading-tight">Engineered to <br/><span class="text-primary-container">Outperform.</span></h2>
+<div class="space-y-8">
+<div class="flex gap-6 items-start">
+<div class="w-12 h-12 rounded-lg bg-primary-container/20 flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-primary-container">memory</span>
+</div>
+<div>
+<h4 class="font-label-md text-label-md text-white mb-2">Nexus Core Alpha</h4>
+<p class="text-surface-variant font-body-md">3.4GHz 12-core processor providing 40% faster performance than the previous generation.</p>
+</div>
+</div>
+<div class="flex gap-6 items-start">
+<div class="w-12 h-12 rounded-lg bg-primary-container/20 flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-primary-container">bolt</span>
+</div>
+<div>
+<h4 class="font-label-md text-label-md text-white mb-2">HyperCharge 120W</h4>
+<p class="text-surface-variant font-body-md">Get 80% charge in just 15 minutes. Revolutionary thermal management keeps it cool.</p>
+</div>
+</div>
+<div class="flex gap-6 items-start">
+<div class="w-12 h-12 rounded-lg bg-primary-container/20 flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-primary-container">visibility</span>
+</div>
+<div>
+<h4 class="font-label-md text-label-md text-white mb-2">Liquid Vision Pro</h4>
+<p class="text-surface-variant font-body-md">144Hz LTPO OLED display with 2500 nits peak brightness for stunning outdoor visibility.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="relative">
+<div class="aspect-square bg-gradient-to-br from-primary-container/20 to-transparent rounded-full absolute -top-12 -left-12 w-full blur-3xl"></div>
+<img class="relative z-10 w-full rounded-2xl shadow-2xl border border-white/10 grayscale hover:grayscale-0 transition-all duration-700" data-alt="A macro photograph of the internal components of a smartphone, stylized with glowing green circuit lines and neon accents. The central processing chip is the focal point, radiating a soft green light. The aesthetic is tech-noir and futuristic, emphasizing the hidden power within the device. High-contrast lighting and sharp details create a sense of advanced engineering." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBn3Gmmb0KMAj1WkbJuj0R6icjIFTOz3ig71Kp91VczqxP8LpGQ8D8INgVjwf5vLYEPfn6StMrPDsoSRa0IZgCskPycdnirA4459q_dcLAbyYabVNGAK1_S0ZvVxLQ2-i_ii4u0Xvo968819T3nOokx0dAR3hB7VqMo0B-FMzBYsYjYQMxzV2Kl7ZrpPhbljduVFIHbLohfoP7S1ugnLKCoVPVzd3RPYUF6wHBfYFyjg8m6_JRJC_Dhiy-qYyVQUlzpH7RFx5SYZMl4"/>
+</div>
+</div>
+</div>
+</section>
+<!-- Newsletter / CTA -->
+<section class="py-section-gap-lg bg-surface">
+<div class="max-w-[1280px] mx-auto px-margin-desktop">
+<div class="bg-primary-container/5 rounded-3xl p-12 md:p-20 text-center space-y-8 border border-primary-container/10">
+<h2 class="font-headline-md text-headline-md text-on-surface">Stay Ahead of the Curve</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto">Get exclusive early access to new product launches, firmware updates, and member-only deals delivered to your inbox.</p>
+<form class="flex flex-col md:flex-row gap-4 max-w-lg mx-auto pt-4" onsubmit="event.preventDefault();">
+<input class="flex-grow px-6 py-4 rounded-xl border-none bg-surface-container-low focus:ring-2 focus:ring-primary transition-all text-on-surface" placeholder="Enter your email" type="email"/>
+<button class="bg-primary text-white px-8 py-4 rounded-xl font-label-md text-label-md hover:bg-surface-tint transition-all whitespace-nowrap">Subscribe</button>
+</form>
+<p class="font-label-sm text-label-sm text-on-surface-variant">We respect your privacy. Unsubscribe at any time.</p>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full bg-surface-container-lowest border-t border-outline-variant">
+<div class="max-w-[1280px] mx-auto px-margin-desktop py-section-gap-sm flex flex-col md:flex-row justify-between items-center gap-8">
+<div class="flex flex-col items-center md:items-start gap-4">
+<span class="font-headline-sm text-headline-sm font-bold text-on-surface">TechNexus</span>
+<p class="text-on-surface-variant font-body-md text-center md:text-left max-w-xs">© 2024 TechNexus Premium Electronics. All rights reserved.</p>
+</div>
+<div class="flex flex-wrap justify-center gap-x-8 gap-y-4">
+<a class="text-on-surface-variant hover:text-primary transition-colors font-body-md text-body-md focus:underline" href="#">Privacy Policy</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-body-md text-body-md focus:underline" href="#">Terms of Service</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-body-md text-body-md focus:underline" href="#">Shipping Info</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-body-md text-body-md focus:underline" href="#">Returns</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-body-md text-body-md focus:underline" href="#">Contact Us</a>
+</div>
+<div class="flex gap-4">
+<div class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center text-on-surface-variant hover:text-primary transition-all cursor-pointer">
+<span class="material-symbols-outlined">public</span>
+</div>
+<div class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center text-on-surface-variant hover:text-primary transition-all cursor-pointer">
+<span class="material-symbols-outlined">share</span>
+</div>
+</div>
+</div>
+</footer>
+<script>
+        // Simple scroll reveal for cards
+        const observerOptions = {
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('opacity-100', 'translate-y-0');
+                    entry.target.classList.remove('opacity-0', 'translate-y-10');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.card-shadow').forEach(card => {
+            card.classList.add('opacity-0', 'translate-y-10', 'transition-all', 'duration-700');
+            observer.observe(card);
+        });
+    </script>
+</body></html>
