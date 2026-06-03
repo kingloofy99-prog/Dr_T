@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>TechNexus | High-Performance Laptops</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-tint": "#006d34",
+                        "inverse-on-surface": "#f0f1f2",
+                        "on-primary-fixed-variant": "#005225",
+                        "surface-container": "#edeeef",
+                        "surface-variant": "#e1e3e4",
+                        "tertiary-fixed": "#e5e2e1",
+                        "tertiary-container": "#b3b1b1",
+                        "on-primary-container": "#004f24",
+                        "on-primary": "#ffffff",
+                        "on-tertiary-fixed-variant": "#474746",
+                        "primary-container": "#00cc66",
+                        "secondary-fixed-dim": "#c6c6c6",
+                        "surface-container-high": "#e7e8e9",
+                        "tertiary": "#5f5e5e",
+                        "surface": "#f8f9fa",
+                        "outline-variant": "#bbcbba",
+                        "on-surface": "#191c1d",
+                        "surface-bright": "#f8f9fa",
+                        "tertiary-fixed-dim": "#c8c6c5",
+                        "surface-container-low": "#f3f4f5",
+                        "on-secondary": "#ffffff",
+                        "surface-container-highest": "#e1e3e4",
+                        "on-secondary-container": "#646464",
+                        "on-secondary-fixed-variant": "#474747",
+                        "secondary-container": "#e2e2e2",
+                        "on-tertiary": "#ffffff",
+                        "on-error-container": "#93000a",
+                        "secondary-fixed": "#e2e2e2",
+                        "on-tertiary-container": "#444444",
+                        "inverse-primary": "#37e279",
+                        "on-surface-variant": "#3c4a3d",
+                        "primary": "#006d34",
+                        "surface-dim": "#d9dadb",
+                        "background": "#f8f9fa",
+                        "on-error": "#ffffff",
+                        "inverse-surface": "#2e3132",
+                        "error-container": "#ffdad6",
+                        "on-tertiary-fixed": "#1c1b1b",
+                        "secondary": "#5e5e5e",
+                        "primary-fixed": "#63ff94",
+                        "on-primary-fixed": "#00210b",
+                        "surface-container-lowest": "#ffffff",
+                        "on-secondary-fixed": "#1b1b1b",
+                        "outline": "#6c7b6c",
+                        "error": "#ba1a1a",
+                        "primary-fixed-dim": "#37e279",
+                        "on-background": "#191c1d"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "unit": "8px",
+                        "container-max": "1280px",
+                        "section-gap-lg": "120px",
+                        "margin-mobile": "20px",
+                        "margin-desktop": "64px",
+                        "gutter": "24px",
+                        "section-gap-sm": "64px"
+                    },
+                    "fontFamily": {
+                        "display-lg": ["Montserrat"],
+                        "body-md": ["Inter"],
+                        "body-lg": ["Inter"],
+                        "display-lg-mobile": ["Montserrat"],
+                        "headline-md": ["Montserrat"],
+                        "headline-sm": ["Montserrat"],
+                        "label-md": ["Inter"],
+                        "label-sm": ["Inter"]
+                    },
+                    "fontSize": {
+                        "display-lg": ["64px", {"lineHeight": "72px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                        "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                        "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                        "display-lg-mobile": ["40px", {"lineHeight": "48px", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+                        "headline-md": ["32px", {"lineHeight": "40px", "fontWeight": "600"}],
+                        "headline-sm": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                        "label-md": ["14px", {"lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                        "label-sm": ["12px", {"lineHeight": "16px", "fontWeight": "500"}]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .glass-nav {
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+        }
+        .btn-gradient {
+            background: linear-gradient(135deg, #00cc66 0%, #006d34 100%);
+            box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .btn-gradient:hover {
+            transform: translateY(-1px);
+            box-shadow: 0 4px 12px rgba(0, 109, 52, 0.25);
+        }
+        .product-card {
+            box-shadow: 0px 12px 32px rgba(0, 0, 0, 0.04);
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .product-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0px 24px 48px rgba(0, 0, 0, 0.08);
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+            100% { transform: translateY(0px); }
+        }
+        .animate-float {
+            animation: float 6s ease-in-out infinite;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface font-body-md selection:bg-primary-container selection:text-on-primary-container">
+<!-- Header Navigation -->
+<header class="fixed top-0 w-full z-50 bg-surface/80 glass-nav shadow-sm">
+<nav class="max-w-[1280px] mx-auto px-margin-desktop flex justify-between items-center h-[64px]">
+<div class="font-headline-sm text-headline-sm font-bold text-on-surface">TechNexus</div>
+<!-- Desktop Nav -->
+<div class="hidden md:flex items-center gap-8">
+<a class="text-primary font-bold border-b-2 border-primary py-1" href="#">Laptops</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-body-md" href="#">Printers</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-body-md" href="#">Mobiles</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-body-md" href="#">Deals</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-body-md" href="#">Support</a>
+</div>
+<div class="flex items-center gap-4">
+<button class="text-on-surface-variant hover:text-primary transition-all duration-300 font-label-md">Log In</button>
+<button class="btn-gradient px-6 py-2 rounded-lg text-on-primary font-label-md">Sign Up</button>
+</div>
+</nav>
+</header>
+<main class="pt-[120px] pb-section-gap-lg">
+<!-- Hero Section -->
+<section class="max-w-[1280px] mx-auto px-margin-desktop mb-section-gap-sm">
+<div class="flex flex-col md:flex-row items-center gap-gutter">
+<div class="flex-1 space-y-6">
+<span class="inline-block px-3 py-1 rounded-full bg-primary-container/10 text-primary font-label-sm uppercase tracking-wider">Premium Performance</span>
+<h1 class="font-display-lg text-display-lg text-on-surface leading-tight">Next-Gen Laptops Engineered for Precision.</h1>
+<p class="text-body-lg text-on-surface-variant max-w-xl">Experience the perfect synergy of power, portability, and design. Our latest collection redefines what a professional workstation should be.</p>
+</div>
+<div class="flex-1 relative">
+<div class="absolute -z-10 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] h-[120%] bg-primary-container/5 rounded-full blur-3xl"></div>
+<img alt="Premium Laptop" class="w-full h-auto animate-float drop-shadow-2xl" data-alt="A side-view studio shot of a ultra-slim, dark titanium finished laptop floating against a minimalist clean white background. The lighting is soft and diffused with subtle green environmental reflections that suggest a high-end, futuristic tech laboratory. The overall mood is sophisticated, clinical, and premium, highlighting the device's sharp industrial edges and elegant form factor." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDejNYY-AnM2jjcS1wsden4HvYqpKYIplUhB0gnTBTf_WmjHF36Isc30aIgvqNoKKvY4bww0kRmks73GaKgHdzgC_MTEMlIyOECJBIQFoVB6vZj6lIlRVx34cN3fjQYU2XqMlZJNlThdar8waDkvULgyDgDf7gbOIrSqfK3upVRj_cRVBQVWELzIYXaG4Lebk9dnrrbv6k0SxERYPm0U650Z8-l97KXzttQfXKIw4_25GMA7zKoxWqx1IgWhCA8kvaCaSwCTY0GTzzC"/>
+</div>
+</div>
+</section>
+<!-- Filters & Sort -->
+<section class="max-w-[1280px] mx-auto px-margin-desktop mb-12">
+<div class="flex flex-wrap items-center justify-between gap-4 border-b border-outline-variant pb-6">
+<div class="flex gap-4">
+<button class="flex items-center gap-2 px-4 py-2 rounded-lg bg-surface-container-low hover:bg-surface-container-high transition-colors">
+<span class="material-symbols-outlined text-[20px]">filter_list</span>
+<span class="font-label-md">Filter</span>
+</button>
+<div class="flex gap-2">
+<span class="px-3 py-2 rounded-full bg-primary-container text-on-primary-container font-label-sm">Gaming</span>
+<span class="px-3 py-2 rounded-full bg-surface-container-high text-on-surface-variant font-label-sm">Workstation</span>
+<span class="px-3 py-2 rounded-full bg-surface-container-high text-on-surface-variant font-label-sm">Ultrabook</span>
+</div>
+</div>
+<div class="flex items-center gap-2">
+<span class="text-on-surface-variant font-label-sm">Sort by:</span>
+<select class="bg-transparent border-none focus:ring-0 font-label-md text-primary cursor-pointer">
+<option>Recommended</option>
+<option>Price: Low to High</option>
+<option>Price: High to Low</option>
+<option>Newest First</option>
+</select>
+</div>
+</div>
+</section>
+<!-- Product Grid -->
+<section class="max-w-[1280px] mx-auto px-margin-desktop">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<!-- Product Card 1 -->
+<div class="product-card bg-surface-container-lowest rounded-xl overflow-hidden group">
+<div class="relative h-[280px] overflow-hidden bg-surface-container-low flex items-center justify-center p-8">
+<img alt="Nexus Pro X1" class="max-h-full w-auto object-contain transition-transform duration-700 group-hover:scale-110" data-alt="A high-performance silver metallic laptop open on a white marble desk in a bright, airy architectural studio. The screen shows a vibrant green and dark emerald abstract pattern. Soft morning sunlight streams through a large window, creating long, clean shadows. The aesthetic is extremely professional, using a white and soft green color palette to convey premium innovation." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAHFEzKAseclkTJrklRaWUQP2v0FXAR96NG_0J4QjPyyhU1GBRx6p-Q5tzMnxDJuvTKxohLdHlKWoW_cluuFNENM4npaXJUDxhFibEK_sDEm0MZ1fogl0UFVr16QYhmWjfNvKZKlmJh0HdDX9mRuh06d1w--EkHTGv89O1jyaZVlpOTidX8KzqAhi0_dnu5E19FvfVySzWKBO9iSgAW0phwco9O02F1EHr5RhIMtICjmy9kWYjzlCuQRVvsa3EHqGFKBglup5aVtdQo"/>
+<div class="absolute top-4 right-4 bg-on-surface text-on-primary text-[10px] font-bold px-2 py-1 rounded-full uppercase tracking-widest">New Arrival</div>
+</div>
+<div class="p-8 space-y-4">
+<div class="flex justify-between items-start">
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Nexus Pro X1</h3>
+<p class="text-on-surface-variant text-label-sm">Intel Core i9 · 32GB RAM · 1TB SSD</p>
+</div>
+<span class="font-headline-sm text-primary">$2,499</span>
+</div>
+<div class="flex items-center gap-2 text-on-surface-variant">
+<span class="material-symbols-outlined text-[18px]">bolt</span>
+<span class="text-label-sm">Ultra-fast charging</span>
+</div>
+<button class="w-full btn-gradient py-4 rounded-lg text-on-primary font-label-md uppercase tracking-wider">Configure Now</button>
+</div>
+</div>
+<!-- Product Card 2 -->
+<div class="product-card bg-surface-container-lowest rounded-xl overflow-hidden group">
+<div class="relative h-[280px] overflow-hidden bg-surface-container-low flex items-center justify-center p-8">
+<img alt="Titan Workstation" class="max-h-full w-auto object-contain transition-transform duration-700 group-hover:scale-110" data-alt="A sleek black workstation laptop positioned on a minimalist white surface with soft neon green lighting strips reflecting off its polished keyboard. The surrounding space is a dark, luxury office with ambient emerald highlights. The focus is on the precision-engineered hinges and the high-resolution matte display, creating a mood of absolute technical superiority and professional elegance." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBDYwPx8O6TsmtHkiQ1XGNJKFrN2Tk0qpzSfQIZ0vWmZfh6iZwa1MB39Zk9YzcyYMS-hS_QQq4xybxUNI_nwdC89IdSGKz3LMPJlESzmLy8jHXY4EBUTg3vLtZBjpeKaU8UlOK5eSVNh7kun_ZCO9TDX5F-Xw5ApHKruP2DIjpCdFmEMf4JudWp4g9lO5k7Ught95QiWP6djFGnG_NVOpD5Ph5fIXrIcyK0RKw376MXvUs5Ly2uUe2Sw9om1OWAZNL80eQuOK2S84OQ"/>
+</div>
+<div class="p-8 space-y-4">
+<div class="flex justify-between items-start">
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Titan Workstation</h3>
+<p class="text-on-surface-variant text-label-sm">RTX 4090 · 64GB RAM · 2TB SSD</p>
+</div>
+<span class="font-headline-sm text-primary">$3,899</span>
+</div>
+<div class="flex items-center gap-2 text-on-surface-variant">
+<span class="material-symbols-outlined text-[18px]">memory</span>
+<span class="text-label-sm">Extreme performance</span>
+</div>
+<button class="w-full btn-gradient py-4 rounded-lg text-on-primary font-label-md uppercase tracking-wider">Configure Now</button>
+</div>
+</div>
+<!-- Product Card 3 -->
+<div class="product-card bg-surface-container-lowest rounded-xl overflow-hidden group">
+<div class="relative h-[280px] overflow-hidden bg-surface-container-low flex items-center justify-center p-8">
+<img alt="Air-Stream Elite" class="max-h-full w-auto object-contain transition-transform duration-700 group-hover:scale-110" data-alt="An ultra-thin rose-gold and brushed silver laptop displayed in a floating position amidst soft, white translucent fabric waves. The scene is bright and airy, representing extreme portability and lightweight design. Accents of soft forest green appear in the background as subtle bokeh circles. The composition is clean, modern, and focuses on the high-fidelity aesthetics of professional travel hardware." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC9uLCIj4olBigoFnm5D0JHZjv-HiA18l7VX3RiTOn21_WZ8tWHoCXXjhvpST81pDtFe8_pPxQuYTGiuwrWw8L8_RSaNEhMQ8Dzr635dFoSGtbjSrrAJtJAW3-L1sEI61ceGjF_t5vjzxKG3UXadQfyOz5ntMDwpS424a8WJEoakkDgtWl0g7mrqCKXBjB7G5GkKuMPDoa2rDOUum823o-qLbdxS7rN0vs2A1JSL8wWoxty9QVV9MCF3FzTeVHIuidE0aebuB0lviaT"/>
+<div class="absolute top-4 right-4 bg-primary text-on-primary text-[10px] font-bold px-2 py-1 rounded-full uppercase tracking-widest">Best Seller</div>
+</div>
+<div class="p-8 space-y-4">
+<div class="flex justify-between items-start">
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Air-Stream Elite</h3>
+<p class="text-on-surface-variant text-label-sm">M3 Pro · 16GB RAM · 512GB SSD</p>
+</div>
+<span class="font-headline-sm text-primary">$1,299</span>
+</div>
+<div class="flex items-center gap-2 text-on-surface-variant">
+<span class="material-symbols-outlined text-[18px]">battery_very_low</span>
+<span class="text-label-sm">22h Battery Life</span>
+</div>
+<button class="w-full btn-gradient py-4 rounded-lg text-on-primary font-label-md uppercase tracking-wider">Configure Now</button>
+</div>
+</div>
+<!-- Product Card 4 -->
+<div class="product-card bg-surface-container-lowest rounded-xl overflow-hidden group">
+<div class="relative h-[280px] overflow-hidden bg-surface-container-low flex items-center justify-center p-8">
+<img alt="Vanguard Gaming" class="max-h-full w-auto object-contain transition-transform duration-700 group-hover:scale-110" data-alt="A top-down architectural view of a dark charcoal gaming laptop with glowing green backlit keys on a textured black slate table. The screen is vibrant, displaying high-speed motion graphics in emerald and cyan. Minimalist silver tech accessories are arranged neatly around it. The overall look is professional gaming gear with a corporate-luxe finish, maintaining the white and green color theme." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAC7N7eAI8Q47Tbj9NLYXKPaTI5iYsEwECsuBmyODJeAqidnSFGb95yNdzhoikdDV6qsV_H2U5JUz1_Qj_UeUpgOnY5PgebjeYCjQ3n6CHeAuos37qOTe8fthnJejIAdL0lwZI-qpAJo8jwdzQZZUA-iDgz1B8IpzAVpH7KIzlMPcC8qMNy_GskZ0jN055n91Y4C2JXjaDOZEDnXDPcGndq65fmrL-kobJb94-YxKsRmmuGJ9RznzQH9SKQ_j7o1eL45jdU-8i4S4Rg"/>
+</div>
+<div class="p-8 space-y-4">
+<div class="flex justify-between items-start">
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Vanguard Gaming</h3>
+<p class="text-on-surface-variant text-label-sm">Ryzen 9 · 32GB RAM · 240Hz OLED</p>
+</div>
+<span class="font-headline-sm text-primary">$2,199</span>
+</div>
+<div class="flex items-center gap-2 text-on-surface-variant">
+<span class="material-symbols-outlined text-[18px]">refresh</span>
+<span class="text-label-sm">Pro OLED Display</span>
+</div>
+<button class="w-full btn-gradient py-4 rounded-lg text-on-primary font-label-md uppercase tracking-wider">Configure Now</button>
+</div>
+</div>
+<!-- Product Card 5 -->
+<div class="product-card bg-surface-container-lowest rounded-xl overflow-hidden group">
+<div class="relative h-[280px] overflow-hidden bg-surface-container-low flex items-center justify-center p-8">
+<img alt="Eco-Pro 14" class="max-h-full w-auto object-contain transition-transform duration-700 group-hover:scale-110" data-alt="A minimalist white laptop sitting on an oak wood desk in a sunlit home office with many green indoor plants. The atmosphere is calm, clean, and productivity-focused. Soft shadows fall across the keyboard. The image highlights the natural integration of technology into a healthy, modern lifestyle, emphasizing the white and green brand colors through nature and minimal design." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDdj-O6mCcDKVabqkdCamzG667jwJE7jp6oj1SFDvQwsg72LIRYKVAquAiZqg7N6OHfcGQyyE3vqXYwYbxu81NK7XvBskgMK_XshsB-eVntoNs-bWrdwWO7qNCpI4NIZreBs0AinD_W4rFpv3dTzK41VgUs6a91F7EwIB7CuFeQglrurFg9EMDzbbmbo1Uzbz7Qy2kQWpkqid_y6IDJHNwmGk_4MhFiwSj-07ZY5vemtzzdQP3BYVL2d8xjlu4_SW0OZEYSug1IllZB"/>
+</div>
+<div class="p-8 space-y-4">
+<div class="flex justify-between items-start">
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Eco-Pro 14</h3>
+<p class="text-on-surface-variant text-label-sm">Recycled Aluminum · Carbon Neutral</p>
+</div>
+<span class="font-headline-sm text-primary">$999</span>
+</div>
+<div class="flex items-center gap-2 text-on-surface-variant">
+<span class="material-symbols-outlined text-[18px]">eco</span>
+<span class="text-label-sm">Sustainable materials</span>
+</div>
+<button class="w-full btn-gradient py-4 rounded-lg text-on-primary font-label-md uppercase tracking-wider">Configure Now</button>
+</div>
+</div>
+<!-- Product Card 6 -->
+<div class="product-card bg-surface-container-lowest rounded-xl overflow-hidden group">
+<div class="relative h-[280px] overflow-hidden bg-surface-container-low flex items-center justify-center p-8">
+<img alt="Visionary Fold" class="max-h-full w-auto object-contain transition-transform duration-700 group-hover:scale-110" data-alt="A futuristic dual-screen laptop concept showcased in a sleek gallery setting with reflective glass surfaces and deep green accent lights. The device is glowing with data visualizations on both high-contrast OLED panels. The surrounding architecture is brutalist yet refined, using a monochrome palette with intense primary green highlights to suggest peak innovation and elite status." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAnOlM_0se5aWZhWT3fzZu03ei7pFJ30bbJqPbxUQa_w4vdjCrq9Y5rlavqHvx8jpyhURsWpkR2vYrvA1BnFrt_wHO4MMLHiDWmqnYxmXPtY4YaeovDF2Jpb3MMcYJE2uLnZg8DyNNUGyG5xF-jPB47hyL11ghmIMbrUKhRMmcxZt7fP-k5i8f1i_-7aC87_omRKkvwsyaDKt2N0FhqY1okGI2ammYa0Z7Q1WepzCGPq1lXKXl-hLD3cinnRGK4e-tMNWNNHiV6-5op"/>
+</div>
+<div class="p-8 space-y-4">
+<div class="flex justify-between items-start">
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Visionary Fold</h3>
+<p class="text-on-surface-variant text-label-sm">Dual OLED · 16GB RAM · Hybrid OS</p>
+</div>
+<span class="font-headline-sm text-primary">$2,999</span>
+</div>
+<div class="flex items-center gap-2 text-on-surface-variant">
+<span class="material-symbols-outlined text-[18px]">layers</span>
+<span class="text-label-sm">Infinity folding screen</span>
+</div>
+<button class="w-full btn-gradient py-4 rounded-lg text-on-primary font-label-md uppercase tracking-wider">Configure Now</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Newsletter / CTA -->
+<section class="max-w-[1280px] mx-auto px-margin-desktop mt-section-gap-lg">
+<div class="relative rounded-3xl overflow-hidden bg-inverse-surface p-12 md:p-20 text-center">
+<div class="absolute inset-0 opacity-10" style="background-image: radial-gradient(circle at 2px 2px, #00cc66 1px, transparent 0); background-size: 40px 40px;"></div>
+<div class="relative z-10 max-w-2xl mx-auto space-y-8">
+<h2 class="font-display-lg text-display-lg-mobile md:text-display-lg text-inverse-on-surface">Build your dream workstation today.</h2>
+<p class="text-body-lg text-surface-variant">Join 50,000+ professionals who trust TechNexus for their high-performance computing needs.</p>
+<div class="flex flex-col md:flex-row gap-4 justify-center">
+<input class="px-6 py-4 rounded-lg bg-surface-variant/10 border-none text-on-primary placeholder:text-surface-variant/50 focus:ring-2 focus:ring-primary min-w-[300px]" placeholder="Enter your email" type="email"/>
+<button class="btn-gradient px-8 py-4 rounded-lg text-on-primary font-label-md uppercase tracking-widest">Get Early Access</button>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full bg-surface-container-lowest border-t border-outline-variant">
+<div class="max-w-[1280px] mx-auto px-margin-desktop py-section-gap-sm flex flex-col md:flex-row justify-between items-center gap-8">
+<div class="flex flex-col items-center md:items-start gap-4">
+<div class="font-headline-sm text-headline-sm font-bold text-on-surface">TechNexus</div>
+<p class="text-on-surface-variant font-body-md text-center md:text-left">© 2024 TechNexus Premium Electronics. All rights reserved.</p>
+</div>
+<div class="flex flex-wrap justify-center gap-8">
+<a class="text-on-surface-variant hover:text-primary transition-colors font-body-md" href="#">Privacy Policy</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-body-md" href="#">Terms of Service</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-body-md" href="#">Shipping Info</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-body-md" href="#">Returns</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-body-md" href="#">Contact Us</a>
+</div>
+</div>
+</footer>
+<script>
+        // Simple Micro-interaction for smooth scrolling and hover depth
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Add subtle parallax-like effect to hero image
+        window.addEventListener('mousemove', (e) => {
+            const moveX = (e.clientX - window.innerWidth / 2) * 0.01;
+            const moveY = (e.clientY - window.innerHeight / 2) * 0.01;
+            const heroImg = document.querySelector('.animate-float');
+            if (heroImg) {
+                heroImg.style.transform = `translate(${moveX}px, ${moveY}px)`;
+            }
+        });
+    </script>
+</body></html>
